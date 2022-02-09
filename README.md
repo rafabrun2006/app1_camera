@@ -16,4 +16,4 @@ ionic capacitor run android
 
 | Plugin | README |
 | ------ | ------ |
-| Camera | [https://capacitorjs.com/docs/apis/camera][PlDb]
+| Camera | [https://capacitorjs.com/docs/apis/camera]
