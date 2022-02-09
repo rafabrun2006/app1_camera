@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Imagens</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item *ngFor="let image of images; let index = index">
+      <ion-thumbnail slot="start">
+        <img [src]="image">
+      </ion-thumbnail>
+      <ion-label>Imagem {{ index+1 }}</ion-label>
+    </ion-item>
+    <ion-item *ngIf="!images.length">
+      <ion-label>Sem imagens!</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div id="container">
+      <ion-button expand="block" (click)="takePicture()">Câmera/Pasta</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
